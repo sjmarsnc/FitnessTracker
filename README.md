@@ -4,7 +4,12 @@
 
 ## User Story
 
-* As a user, I want to be able to view create and track daily workouts. This app lets me log multiple exercises in a workout on a given day. I can also track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I can track the distance traveled and the duration of exercise.  Clicking on the "Fitness Tracker" text in the header takes me to a page where I can see a summary for the week of weights lifted, miles covered, and time spent in exercise.  
+As a user, I want to be able to view create and track daily workouts. This app lets me: 
+
+* log multiple exercises in a workout on a given day
+* track the name, type, weight, sets, reps, and duration of of a strength/resistance exercise 
+* track the distance and time duration of a cardio exercise
+* click on the "Fitness Tracker" text in the header to see a summary for the week of weights lifted, miles covered, and time spent in exercise.  
 
 ## Business Context
 
