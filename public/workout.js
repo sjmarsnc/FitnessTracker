@@ -48,6 +48,7 @@ function formatDate(date) {
 
 function renderWorkoutSummary(summary) {
   const container = document.querySelector(".workout-stats");
+  // handle scenario when no exercises in a workout 
 
   const workoutKeyMap = {
     date: "Date",

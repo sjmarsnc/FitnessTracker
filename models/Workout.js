@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
-    date: {
+    day: {
         type: Date,
         default: Date.now
     },
@@ -12,21 +12,16 @@ const WorkoutSchema = new Schema({
             type: {
                 type: String,
                 trim: true,
-                required: "Type of exercise is required",
-                validate: { 
-                    validator: function( exercise) 
-                    {
-                     return ["Resistance", "Cardio"].indexOf(value) > -1; 
-                    }, 
-                    message: "Exercise type not valid."
-               }
+                required: true, 
+                message: "Type of exercise is required"
+               
             },
 
             name: {
                 type: String,
                 trim: true,
                 required: true, 
-                message: "Type of exercise is required"
+                message: "Name of exercise is required"
             },
 
             weight: {
@@ -45,7 +40,7 @@ const WorkoutSchema = new Schema({
                 type: Number
             },
 
-            time: {
+            duration: {
                 type: Number
             }
         }]
