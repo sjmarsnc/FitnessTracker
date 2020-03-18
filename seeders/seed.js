@@ -2,16 +2,16 @@ let mongoose = require("mongoose");
 let db = require("../models");
 
 // For localhost 
-// mongoose.connect("mongodb://localhost/workout", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
-
-// For deployment on Heroku 
-mongoose.connect("mongodb://susan:tripp2luke@ds117509.mlab.com:17509/heroku_v61v35ww", {
+mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
+
+// For deployment on Heroku 
+// mongoose.connect("mongodb://susan:tripp2luke@ds117509.mlab.com:17509/heroku_v61v35ww", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false
+// });
 
 let workoutSeed = [
   {

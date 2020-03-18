@@ -40,7 +40,7 @@ const WorkoutSchema = new Schema({
                 type: Number
             },
 
-            time: {
+            duration: {
                 type: Number
             }
         }]

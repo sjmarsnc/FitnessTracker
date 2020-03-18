@@ -33,7 +33,8 @@ module.exports = function (app) {
         console.log("Id: ",req.params.id); 
         // let newExercise = JSON.parse(req.body);
         let newExercise = req.body; 
-        db.Workout.findByIdAndUpdate( req.params.id , { $push: {exercises: newExercise}});  
+        db.Workout.findByIdAndUpdate( req.params.id , { $push: {exercises: newExercise}})
+          .then(updatedWorkout => { console.log(updatedWorkout)});  
     });
 
     app.post("/api/workouts/:id", function (req, res) {
